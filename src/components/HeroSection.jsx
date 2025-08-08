@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className="relative container mx-auto px-6 py-32 flex flex-col justify-center min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Left Side - Content */}
-          <div className="space-y-12">
+          <div className="space-y-12 flex flex-col items-center lg:items-start">
             {/* Header Badge */}
             <div className="inline-flex items-center px-6 py-3 border border-white/20 rounded-full backdrop-blur-sm">
               <div className="w-2 h-2 bg-white rounded-full mr-3 animate-pulse"></div>
@@ -31,7 +31,7 @@ export default function HeroSection() {
             </div>
             
             {/* Main Headline */}
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight leading-[0.9] tracking-tight">
                 Precisa de um
                 <br />
@@ -63,7 +63,7 @@ export default function HeroSection() {
             </div>
 
             {/* CTA Section */}
-            <div className="space-y-6">
+            <div className="space-y-6 flex flex-col items-center lg:items-start">
               <Button 
                 onClick={handleWhatsAppClick}
                 className="bg-white text-black hover:bg-white/90 font-medium px-8 py-4 text-lg rounded-none border-0 shadow-none hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 group"
