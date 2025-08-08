@@ -4,8 +4,6 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ExpectationSection from '../components/ExpectationSection';
 import ProcessSection from '../components/ProcessSection';
-import PricingSection from '../components/PricingSection';
-import ContactForm from '../components/ContactForm';
 import FinalCTASection from '../components/FinalCTASection';
 import Footer from '../components/Footer';
 import FloatingWhatsappButton from '../components/FloatingWhatsappButton';
@@ -18,8 +16,6 @@ export default function Home() {
       <ServicesSection />
       <ExpectationSection />
       <ProcessSection />
-      <PricingSection />
-      <ContactForm />
       <FinalCTASection />
       <Footer />
       <FloatingWhatsappButton />

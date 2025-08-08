@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Calendar, FileSearch, DollarSign, CheckCircle2 } from 'lucide-react';
+import { MessageCircle, Calendar, FileSearch, DollarSign, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function ProcessSection() {
@@ -36,8 +36,12 @@ export default function ProcessSection() {
     }
   ];
 
-  const scrollToForm = () => {
-    document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+  const whatsappNumber = "5511998980215";
+  const whatsappMessage = "Olá Dr. Lucas! Gostaria de iniciar meu atendimento.";
+
+  const handleWhatsAppClick = () => {
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(url, '_blank');
   };
 
   return (
@@ -89,10 +93,11 @@ export default function ProcessSection() {
           {/* CTA */}
           <div className="text-center">
             <Button 
-              onClick={scrollToForm}
-              className="bg-white text-black hover:bg-white/90 font-medium px-10 py-4 text-lg rounded-none border-0 shadow-none hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              onClick={handleWhatsAppClick}
+              className="bg-white text-black hover:bg-white/90 font-medium px-10 py-4 text-lg rounded-none border-0 shadow-none hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 group"
             >
-              Quero iniciar meu atendimento
+              <span>Quero iniciar meu atendimento</span>
+              <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
           </div>
         </div>
