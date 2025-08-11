@@ -23,16 +23,21 @@ export default function HeroSection() {
       <div className="relative container mx-auto px-6 py-32 flex flex-col justify-center min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Left Side - Content */}
-          <div className="space-y-12 flex flex-col items-center lg:items-start">
+          <div className="space-y-12 text-center lg:text-left">
             {/* Header Badge */}
-            <div className="inline-flex items-center px-6 py-3 border border-white/20 rounded-full backdrop-blur-sm">
-              <div className="w-2 h-2 bg-white rounded-full mr-3 animate-pulse"></div>
-              <span className="text-white/90 font-light tracking-wide text-sm uppercase">Lucas Viana | Advogado</span>
+            <div className="flex justify-center lg:justify-start">
+              <div className="inline-flex items-center px-6 py-3 border border-white/20 rounded-full backdrop-blur-sm">
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/15362d809_lucas-2.png"
+                  alt="Lucas Viana Advocacia"
+                  className="h-12 w-auto"
+                />
+              </div>
             </div>
             
             {/* Main Headline */}
-            <div className="space-y-8 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight leading-[0.9] tracking-tight">
+            <div className="space-y-8">
+              <h1 className="text-5xl lg:text-6xl font-extralight leading-[0.9] tracking-tight text-yellow-500">
                 Precisa de um
                 <br />
                 <span className="font-light italic">advogado</span>
@@ -40,7 +45,7 @@ export default function HeroSection() {
                 <span className="font-bold">confiável?</span>
               </h1>
               
-              <div className="max-w-lg">
+              <div className="max-w-lg mx-auto lg:mx-0">
                 <p className="text-xl text-white/70 font-light leading-relaxed">
                   Você chegou ao lugar certo. Atendimento jurídico de excelência com clareza e transparência total.
                 </p>
@@ -48,14 +53,14 @@ export default function HeroSection() {
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 gap-6 max-w-md">
+            <div className="grid grid-cols-1 gap-6 max-w-md mx-auto lg:mx-0">
               {[
                 "Atendimento pelo WhatsApp",
                 "Suporte direto com o advogado",
                 "Linguagem acessível e clara",
                 "Valores informados com transparência"
               ].map((feature, index) => (
-                <div key={index} className="flex items-center group">
+                <div key={index} className="flex items-center group justify-center lg:justify-start">
                   <div className="w-3 h-3 border border-white/30 rounded-full mr-4 group-hover:bg-white transition-all duration-300"></div>
                   <span className="text-white/90 font-light text-lg tracking-wide">{feature}</span>
                 </div>

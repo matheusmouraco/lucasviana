@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MessageCircle, Calendar, FileSearch, DollarSign, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,10 +53,10 @@ export default function ProcessSection() {
           <div className="text-center mb-20">
             <div className="space-y-8">
               <div className="w-16 h-px bg-white mx-auto"></div>
-              <h2 className="text-4xl md:text-5xl font-extralight leading-tight">
+              <h2 className="text-4xl md:text-5xl font-extralight leading-tight text-yellow-500">
                 Como funciona
                 <br />
-                <span className="font-light italic">o atendimento?</span>
+                <span className="font-light italic text-yellow-500">o atendimento?</span>
               </h2>
               <p className="text-xl text-white/60 font-light">
                 Um processo simples e transparente
@@ -69,7 +70,7 @@ export default function ProcessSection() {
               <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group">
                 {/* Step Number */}
                 <div className="lg:col-span-2 text-center lg:text-left">
-                  <div className="text-6xl md:text-7xl font-extralight text-white/20 group-hover:text-white/40 transition-colors duration-500">
+                  <div className="text-6xl md:text-7xl font-extralight text-yellow-500 group-hover:text-yellow-400 transition-colors duration-500">
                     {step.number.toString().padStart(2, '0')}
                   </div>
                 </div>

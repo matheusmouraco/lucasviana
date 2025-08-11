@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { MapPin, Globe } from 'lucide-react';
 
@@ -8,9 +9,9 @@ export default function AboutSection() {
         <div className="max-w-6xl mx-auto">
           {/* Title Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <div className="space-y-4">
-                <div className="w-16 h-px bg-black"></div>
+                <div className="w-16 h-px bg-black mx-auto lg:mx-0"></div>
                 <h2 className="text-4xl md:text-5xl font-extralight leading-tight text-black">
                   Um advogado que
                   <br />
@@ -19,12 +20,12 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="space-y-8 text-black/70">
+            <div className="space-y-8 text-black/70 text-center lg:text-left">
               <p className="text-xl font-light leading-relaxed">
                 Sabemos que lidar com questões jurídicas pode ser confuso, técnico e desgastante. É por isso que o trabalho do Dr. Lucas Viana vai além da advocacia tradicional.
               </p>
               
-              <div className="border-l-2 border-black/20 pl-8">
+              <div className="border-l-0 lg:border-l-2 border-black/20 pl-0 lg:pl-8">
                 <p className="text-2xl font-light italic text-black">
                   "É sobre traduzir o Direito em soluções reais, com empatia, transparência e foco total na sua necessidade."
                 </p>
@@ -35,9 +36,9 @@ export default function AboutSection() {
           {/* Location Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-32">
             <div className="group cursor-pointer">
-              <div className="border border-black/10 p-12 hover:border-black/30 transition-all duration-500 group-hover:shadow-xl">
+              <div className="border border-black/10 p-12 hover:border-black/30 transition-all duration-500 group-hover:shadow-xl text-center md:text-left">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 border-2 border-black/20 flex items-center justify-center group-hover:border-black transition-colors duration-300">
+                  <div className="w-16 h-16 border-2 border-black/20 flex items-center justify-center group-hover:border-black transition-colors duration-300 mx-auto md:mx-0">
                     <MapPin className="w-8 h-8 text-black/60 group-hover:text-black transition-colors duration-300" />
                   </div>
                   <div className="space-y-2">
@@ -49,9 +50,9 @@ export default function AboutSection() {
             </div>
 
             <div className="group cursor-pointer">
-              <div className="border border-black/10 p-12 hover:border-black/30 transition-all duration-500 group-hover:shadow-xl">
+              <div className="border border-black/10 p-12 hover:border-black/30 transition-all duration-500 group-hover:shadow-xl text-center md:text-left">
                 <div className="space-y-6">
-                  <div className="w-16 h-16 border-2 border-black/20 flex items-center justify-center group-hover:border-black transition-colors duration-300">
+                  <div className="w-16 h-16 border-2 border-black/20 flex items-center justify-center group-hover:border-black transition-colors duration-300 mx-auto md:mx-0">
                     <Globe className="w-8 h-8 text-black/60 group-hover:text-black transition-colors duration-300" />
                   </div>
                   <div className="space-y-2">
