@@ -30,7 +30,7 @@ export default function HeroSection() {
                 <img 
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/15362d809_lucas-2.png"
                   alt="Lucas Viana Advocacia"
-                  className="h-12 lg:h-16 w-auto"
+                  className="h-12 lg:h-20 w-auto"
                 />
               </div>
             </div>
