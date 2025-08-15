@@ -4,7 +4,7 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function FinalCTASection() {
-  const whatsappNumber = "5511998980215";
+  const whatsappNumber = "5511982442447"; // Updated WhatsApp number
   const whatsappMessage = "Olá Dr. Lucas! Gostaria de agendar uma consulta jurídica.";
   
   const handleWhatsAppClick = () => {

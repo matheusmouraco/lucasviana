@@ -37,7 +37,7 @@ export default function ProcessSection() {
     }
   ];
 
-  const whatsappNumber = "5511998980215";
+  const whatsappNumber = "5511982442447";
   const whatsappMessage = "Olá Dr. Lucas! Gostaria de iniciar meu atendimento.";
 
   const handleWhatsAppClick = () => {

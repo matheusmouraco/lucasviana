@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { MapPin, MessageCircle, Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
-  const whatsappNumber = "5511998980215";
+  const whatsappNumber = "5511982442447";
   const whatsappMessage = "Olá Dr. Lucas! Gostaria de agendar uma consulta jurídica.";
   
   const handleWhatsAppClick = () => {
@@ -49,7 +50,7 @@ export default function Footer() {
 
                 <div className="flex items-center space-x-4 justify-center lg:justify-start">
                   <Phone className="w-5 h-5 text-white/60 flex-shrink-0" />
-                  <p className="text-white/90 font-light">(11) 99898-0215</p>
+                  <p className="text-white/90 font-light">(11) 98244-2447</p>
                 </div>
 
                 <div className="flex items-center space-x-4 justify-center lg:justify-start">
