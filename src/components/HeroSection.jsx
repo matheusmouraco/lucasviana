@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 export default function HeroSection() {
   const whatsappNumber = "5511982442447"; // Updated WhatsApp number
   const whatsappMessage = "Olá Dr. Lucas! Gostaria de agendar uma consulta jurídica.";
-  
+
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
@@ -26,23 +26,21 @@ export default function HeroSection() {
           <div className="space-y-12 text-center lg:text-left">
             {/* Header Badge */}
             <div className="flex justify-center lg:justify-start">
-              <div className="inline-flex items-center px-6 py-3 border border-white/20 rounded-full backdrop-blur-sm">
-                <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/15362d809_lucas-2.png"
-                  alt="Lucas Viana Advocacia"
-                  className="h-12 lg:h-20 w-auto"
-                />
-              </div>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/15362d809_lucas-2.png"
+                alt="Lucas Viana Advocacia"
+                className="h-24 lg:h-40 w-auto" />
+
             </div>
             
             {/* Main Headline */}
             <div className="space-y-8">
-              <h1 className="text-5xl lg:text-6xl font-extralight leading-[0.9] tracking-tight text-yellow-500">
-                Precisa de um
-                <br />
-                <span className="font-light italic">advogado</span>
-                <br />
-                <span className="font-bold">confiável?</span>
+              <h1 className="text-5xl lg:text-7.xl text-amber-400 font-extralight normal-case lg:text-8xl leading-[0.9] tracking-tight">Precisa de um
+advogado
+confiável?
+
+
+
               </h1>
               
               <div className="max-w-lg mx-auto lg:mx-0">
@@ -55,24 +53,24 @@ export default function HeroSection() {
             {/* Features Grid */}
             <div className="grid grid-cols-1 gap-6 max-w-md mx-auto lg:mx-0">
               {[
-                "Atendimento pelo WhatsApp",
-                "Suporte direto com o advogado",
-                "Linguagem acessível e clara",
-                "Valores informados com transparência"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-center group justify-center lg:justify-start">
+              "Atendimento pelo WhatsApp",
+              "Suporte direto com o advogado",
+              "Linguagem acessível e clara",
+              "Valores informados com transparência"].
+              map((feature, index) =>
+              <div key={index} className="flex items-center group justify-center lg:justify-start">
                   <div className="w-3 h-3 border border-white/30 rounded-full mr-4 group-hover:bg-white transition-all duration-300"></div>
                   <span className="text-white/90 font-light text-lg tracking-wide">{feature}</span>
                 </div>
-              ))}
+              )}
             </div>
 
             {/* CTA Section */}
             <div className="space-y-6 flex flex-col items-center lg:items-start">
-              <Button 
+              <Button
                 onClick={handleWhatsAppClick}
-                className="bg-white text-black hover:bg-white/90 font-medium px-8 py-4 text-lg rounded-none border-0 shadow-none hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 group"
-              >
+                className="bg-white text-black hover:bg-white/90 font-medium px-8 py-4 text-lg rounded-none border-0 shadow-none hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 group">
+
                 <span>Falar com Dr. Lucas Viana</span>
                 <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
@@ -86,11 +84,11 @@ export default function HeroSection() {
           {/* Right Side - Image Space */}
           <div className="relative">
             <div className="aspect-[3/4] bg-black">
-              <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/ec95acb58_freepik_edit_Professional-male-lawyer-lucas-wearing-a-tailored-1.png"
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/f7cf83220_WhatsAppImage2025-08-18at32142PM.jpg"
                 alt="Dr. Lucas Viana"
-                className="w-full h-full object-cover object-top hover:scale-105 transition-all duration-700"
-              />
+                className="w-full h-full object-cover object-top hover:scale-105 transition-all duration-700" />
+
             </div>
             
             {/* Decorative elements */}
@@ -102,6 +100,6 @@ export default function HeroSection() {
 
       {/* Bottom Line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-    </section>
-  );
+    </section>);
+
 }
